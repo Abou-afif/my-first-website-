@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playable Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>♟️ Chess Game ♟️</h1>
+        <div class="game-info">
+            <div class="turn-info">
+                <p>Current Turn: <span id="currentTurn">White</span></p>
+                <p>Status: <span id="gameStatus">In Progress</span></p>
+            </div>
+            <button id="resetBtn" class="reset-btn">Reset Game</button>
+        </div>
+        
+        <div class="board" id="board"></div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Click a piece to select it (selected pieces show a highlight)</li>
+                <li>Click a valid square to move the piece</li>
+                <li>White moves first</li>
+                <li>Standard chess rules apply</li>
+                <li>Click "Reset Game" to start over</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
